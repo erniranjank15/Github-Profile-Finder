@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GitHub Profile Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    
+    <h1>GitHub Profile Finder</h1>
+    <div class="flex">
+    <input type="text" id="userinput" placeholder="Enter GitHub Username..." />
+    <button id="searchBtn" type="button">Search</button>
+
+    <select id="languageFilter">
+      <option value="all">All Languages</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="Python">Python</option>
+      <option value="C++">C++</option>
+      <option value="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+      <option value="Java">Java</option>
+    </select>
+    </div>
+    <div class="spinner-hidden" id="spinner"></div>
+    
+    <div class="grid">
+      <div class="hidden" id="profile"></div>
+      <div class="hidden" id="repos"></div>
+      <div class="hidden" id="activity"></div>
+      <p id="errorMsg"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
