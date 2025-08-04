@@ -7,9 +7,12 @@ const repos = document.getElementById('repos');
 const errorMsg = document.getElementById('errorMsg');
 const activity = document.getElementById('activity');
 
+/*
 usernameInput.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') searchBtn.click();
 });
+*/
+
 
 languageFilter.addEventListener('change', () => {
     const username = usernameInput.value.trim();
@@ -137,4 +140,5 @@ async function searchRepos(username) {
     } finally {
         spinner.style.display = "none";
     }
+
 }
