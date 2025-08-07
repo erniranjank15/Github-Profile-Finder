@@ -7,11 +7,22 @@ const repos = document.getElementById('repos');
 const errorMsg = document.getElementById('errorMsg');
 const activity = document.getElementById('activity');
 
-/*
+usernameInput.addEventListener('input', () => {
+    const username = usernameInput.value.trim();
+    if (!username) {
+        
+        // Clear all displayed data
+        profile.innerHTML = "";
+        repos.innerHTML = "";
+        activity.innerHTML = "";
+        errorMsg.textContent = "";
+    }
+});
+
 usernameInput.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') searchBtn.click();
 });
-*/
+
 
 
 languageFilter.addEventListener('change', () => {
@@ -142,3 +153,4 @@ async function searchRepos(username) {
     }
 
 }
+
